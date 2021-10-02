@@ -17,7 +17,7 @@ services:
       restart_policy:
         condition: on-failure  
     environment: # Pass environment variables to the service
-      REDIS_URL: redis://redis:6379
+      REDIS_URL: redis:6379
     depends_on:
      - redis
     networks: # Networks to join (Services on the same network can communicate with each other using their name)
